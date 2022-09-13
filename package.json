@@ -1,0 +1,22 @@
+{
+  "name": "tms-qa-auto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc:es5": "tsc --target es5",
+    "tsc:comments": "tsc --removeComments ",
+    "tsc:build": "tsc --outDir compiled"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chapski-dev/tms-qa-auto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chapski-dev/tms-qa-auto/issues"
+  },
+  "homepage": "https://github.com/chapski-dev/tms-qa-auto#readme"
+}
