@@ -1,4 +1,3 @@
-
 // some comment
 
-const num: number = 5;
+const num = 5;

@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc:es5": "tsc --target es5",
     "tsc:comments": "tsc --removeComments ",
-    "tsc:build": "tsc --outDir compiled"
+    "tsc:build": "tsc --outDir compiled",
+    "format:code": "prettier --write \"**/*.js\"",
+    "lint": "eslint 'src/**/*.{ts,json}",
+    "lint:fix": "eslint 'src/**/*.{ts,json}' --quiet --fix"
   },
   "repository": {
     "type": "git",
@@ -18,5 +21,12 @@
   "bugs": {
     "url": "https://github.com/chapski-dev/tms-qa-auto/issues"
   },
-  "homepage": "https://github.com/chapski-dev/tms-qa-auto#readme"
+  "homepage": "https://github.com/chapski-dev/tms-qa-auto#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "lint-staged": "^13.0.3"
+  }
 }
