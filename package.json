@@ -10,7 +10,8 @@
     "tsc:build": "tsc --outDir compiled",
     "format:code": "prettier --write \"**/*.js\"",
     "lint": "eslint 'src/**/*.{ts,json}",
-    "lint:fix": "eslint 'src/**/*.{ts,json}' --quiet --fix"
+    "lint:fix": "eslint 'src/**/*.{ts,json}' --quiet --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,9 @@
   },
   "author": "",
   "license": "ISC",
+  "lint-staged": {
+    "*.ts": "npm run lint:fix"
+  },
   "bugs": {
     "url": "https://github.com/chapski-dev/tms-qa-auto/issues"
   },
@@ -27,6 +31,7 @@
     "@typescript-eslint/parser": "^5.38.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.0",
     "lint-staged": "^13.0.3"
   }
 }
